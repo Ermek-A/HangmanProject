@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootPane" prefHeight="419.0" prefWidth="668.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.HangmanController">
+   <children>
+      <Label fx:id="wordLabel" layoutX="1.0" layoutY="104.0" prefHeight="275.0" prefWidth="668.0" text="_ _ _ _">
+         <font>
+            <Font name="Bell MT" size="30.0" />
+         </font></Label>
+
+      <Button layoutY="275.0" minWidth="35.0" mnemonicParsing="false" onAction="#handleLetterButtonAction" prefHeight="47.0" prefWidth="54.0" text="Q" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="54.0" layoutY="275.0" minWidth="35.0" mnemonicParsing="false" onAction="#handleLetterButtonAction" prefHeight="47.0" prefWidth="54.0" text="W" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="108.0" layoutY="275.0" minWidth="35.0" mnemonicParsing="false" onAction="#handleLetterButtonAction" prefHeight="47.0" prefWidth="54.0" text="E" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="162.0" layoutY="275.0" minWidth="35.0" mnemonicParsing="false" onAction="#handleLetterButtonAction" prefHeight="47.0" prefWidth="54.0" text="R" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="216.0" layoutY="275.0" minWidth="35.0" mnemonicParsing="false" onAction="#handleLetterButtonAction" prefHeight="47.0" prefWidth="54.0" text="T" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="270.0" layoutY="275.0" minWidth="35.0" mnemonicParsing="false" onAction="#handleLetterButtonAction" prefHeight="47.0" prefWidth="54.0" text="Y" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="324.0" layoutY="275.0" minWidth="35.0" mnemonicParsing="false" onAction="#handleLetterButtonAction" prefHeight="47.0" prefWidth="54.0" text="U" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="378.0" layoutY="275.0" minWidth="35.0" mnemonicParsing="false" onAction="#handleLetterButtonAction" prefHeight="47.0" prefWidth="54.0" text="I" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="432.0" layoutY="275.0" minWidth="35.0" mnemonicParsing="false" onAction="#handleLetterButtonAction" prefHeight="47.0" prefWidth="54.0" text="O" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="486.0" layoutY="275.0" minWidth="35.0" mnemonicParsing="false" onAction="#handleLetterButtonAction" prefHeight="47.0" prefWidth="54.0" text="P" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutY="322.0" minWidth="35.0" mnemonicParsing="false" onAction="#handleLetterButtonAction" prefHeight="47.0" prefWidth="54.0" text="A" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="54.0" layoutY="322.0" minWidth="35.0" mnemonicParsing="false" onAction="#handleLetterButtonAction" prefHeight="47.0" prefWidth="54.0" text="S" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="108.0" layoutY="322.0" minWidth="35.0" mnemonicParsing="false" onAction="#handleLetterButtonAction" prefHeight="47.0" prefWidth="54.0" text="D" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="162.0" layoutY="322.0" minWidth="35.0" mnemonicParsing="false" onAction="#handleLetterButtonAction" prefHeight="47.0" prefWidth="54.0" text="F" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="216.0" layoutY="322.0" minWidth="35.0" mnemonicParsing="false" onAction="#handleLetterButtonAction" prefHeight="47.0" prefWidth="54.0" text="G" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="270.0" layoutY="322.0" minWidth="35.0" mnemonicParsing="false" onAction="#handleLetterButtonAction" prefHeight="47.0" prefWidth="54.0" text="H" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="324.0" layoutY="322.0" minWidth="35.0" mnemonicParsing="false" onAction="#handleLetterButtonAction" prefHeight="47.0" prefWidth="54.0" text="J" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="378.0" layoutY="322.0" minWidth="35.0" mnemonicParsing="false" onAction="#handleLetterButtonAction" prefHeight="47.0" prefWidth="54.0" text="K" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="432.0" layoutY="322.0" minWidth="35.0" mnemonicParsing="false" onAction="#handleLetterButtonAction" prefHeight="47.0" prefWidth="54.0" text="L" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutY="369.0" minWidth="35.0" mnemonicParsing="false" onAction="#handleLetterButtonAction" prefHeight="47.0" prefWidth="54.0" text="Z" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="54.0" layoutY="369.0" minWidth="35.0" mnemonicParsing="false" onAction="#handleLetterButtonAction" prefHeight="47.0" prefWidth="54.0" text="X" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="108.0" layoutY="369.0" minWidth="35.0" mnemonicParsing="false" onAction="#handleLetterButtonAction" prefHeight="47.0" prefWidth="54.0" text="C" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="162.0" layoutY="369.0" minWidth="35.0" mnemonicParsing="false" onAction="#handleLetterButtonAction" prefHeight="47.0" prefWidth="54.0" text="V" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="216.0" layoutY="369.0" minWidth="35.0" mnemonicParsing="false" onAction="#handleLetterButtonAction" prefHeight="47.0" prefWidth="54.0" text="B" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="270.0" layoutY="369.0" minWidth="35.0" mnemonicParsing="false" onAction="#handleLetterButtonAction" prefHeight="47.0" prefWidth="54.0" text="N" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="324.0" layoutY="369.0" minWidth="35.0" mnemonicParsing="false" onAction="#handleLetterButtonAction" prefHeight="47.0" prefWidth="54.0" text="M" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Button>
+      <Text layoutX="114.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hangman" textAlignment="CENTER" wrappingWidth="398.69061279296875">
+         <font>
+            <Font name="High Tower Text" size="54.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.8296296000480652" blue="0.8296296000480652" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9157894849777222" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Line endX="100.0" endY="100.79998779296875" layoutX="466.0" layoutY="146.0" startX="100.0" startY="-74.4000015258789" strokeWidth="6.0" />
+      <Line endX="93.0" endY="-87.4000015258789" layoutX="476.0" layoutY="156.0" startX="-36.899993896484375" startY="-87.4000015258789" strokeWidth="6.0" />
+      <Line endX="84.699951171875" endY="-46.800025939941406" layoutX="476.0" layoutY="156.0" startX="61.5" startY="-85.20001983642578" strokeWidth="6.0" />
+      <Circle fx:id="head" fill="#ffffff00" layoutX="440.0" layoutY="113.0" radius="16.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line endX="-36.100006103515625" endY="-61.20001983642578" layoutX="476.0" layoutY="156.0" startX="-36.100006103515625" startY="-85.20001983642578" strokeWidth="6.0" />
+      <Line fx:id="body" endX="116.00003051757812" endY="-52.0" layoutX="324.0" layoutY="181.0" startX="116.00003051757812" startY="5.0" />
+      <Line fx:id="foot2" endX="94.50003051757812" endY="-23.5" layoutX="346.0" layoutY="210.0" startX="124.30001831054688" startY="20.0" />
+      <Line fx:id="foot1" endX="105.10000610351562" endY="-2.600006103515625" layoutX="334.0" layoutY="191.0" startX="82.69998168945312" startY="37.399993896484375" />
+      <Line fx:id="hand1" endX="148.50003051757812" endY="-27.79998779296875" layoutX="291.0" layoutY="174.0" startX="116.00003051757812" startY="5.0" />
+      <Line fx:id="hand2" endX="105.89999389648438" endY="-42.399993896484375" layoutX="334.0" layoutY="191.0" startX="134.69998168945312" startY="-12.0" />
+   </children>
+</AnchorPane>
